@@ -26,7 +26,7 @@ class ViewController: UIViewController {
     // fileprivate let markdownParser = MarkdownParser(font: UIFont(name: "Product Sans", size: UIFont.systemFontSize)!)
     let parser = MarkdownParser()
     parser.addCustomElement(MarkdownSubreddit())
-    
+    parser.addCustomElement(MarkdownItalicBold())
     let viewModel = MarkdownKitViewModel(markdownParser: parser)
     viewModel.markdownAttributedStringChanged = { [weak self](attributtedString, error) in
       if let error = error {
