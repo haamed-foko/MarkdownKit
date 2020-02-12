@@ -34,18 +34,20 @@ open class MarkdownItalic: MarkdownCommonElement {
         
         /* Get string */
         let restOfString = attributedString.string
+        
         /* Separate the string using the matched substring from italic regex */
         let componentsOfRestOfString = restOfString.components(separatedBy: attributedString.attributedSubstring(from: match.range(at: 0)).string)
-        print("Number of components: \(componentsOfRestOfString.count)")
-        if !componentsOfRestOfString.isEmpty && componentsOfRestOfString[1] != nil {
+        //print("Separated by: \(attributedString.attributedSubstring(from: match.range(at: 0)).string)")
+        if !componentsOfRestOfString.isEmpty && componentsOfRestOfString.count >= 2 {
             /* Get the string after the matched substring*/
             let firstComponent = componentsOfRestOfString[1]
             
-            let emailDomain = firstComponent.components(separatedBy: " ")
-            print("emailDomain: \(emailDomain)")
+            let emailDomain = firstComponent.components(separatedBy: CharacterSet(charactersIn: " \n"))
+            //print("emailDomain: \(emailDomain)")
             /* Check if the first is an email*/
-            if (emailDomain[0].contains("@")) {
-                /* If the first word IS and email, don't apply italic styling */
+            if emailDomain[0].contains("@") || attributedString.attributedSubstring(from: match.range(at: 0)).string.contains("@") {
+                /* If the line or first word IS an email, don't apply italic styling */
+                //print("returned\n\n")
                 return
             }
         }
@@ -59,6 +61,6 @@ open class MarkdownItalic: MarkdownCommonElement {
         addAttributes(attributedString, range: match.range(at: 3))
         // deleting leading markdown
         attributedString.deleteCharacters(in: match.range(at: 2))
-        print("\n\n")
+        //print("\n\n")
     }
 }
