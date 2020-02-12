@@ -31,6 +31,27 @@ open class MarkdownItalic: MarkdownCommonElement {
 //        print("range 3: \(attributedString.attributedSubstring(from: match.range(at: 3)).string)")
 //        print("range 4: \(attributedString.attributedSubstring(from: match.range(at: 4)).string)")
 //        print("range 5: \(attributedString.attributedSubstring(from: match.range(at: 5)).string)")
+        
+        /* Get string */
+        let restOfString = attributedString.string
+        /* Separate the string using the matched substring from italic regex */
+        let componentsOfRestOfString = restOfString.components(separatedBy: attributedString.attributedSubstring(from: match.range(at: 0)).string)
+        print("Number of components: \(componentsOfRestOfString.count)")
+        if !componentsOfRestOfString.isEmpty && componentsOfRestOfString[1] != nil {
+            /* Get the string after the matched substring*/
+            let firstComponent = componentsOfRestOfString[1]
+            
+            let emailDomain = firstComponent.components(separatedBy: " ")
+            print("emailDomain: \(emailDomain)")
+            /* Check if the first is an email*/
+            if (emailDomain[0].contains("@")) {
+                /* If the first word IS and email, don't apply italic styling */
+                return
+            }
+        }
+        
+        /* Remove Markdown tags and apply italic styling */
+        
         // deleting trailing markdown
         attributedString.deleteCharacters(in: match.range(at: 5))
         // formatting string (may alter the length)
