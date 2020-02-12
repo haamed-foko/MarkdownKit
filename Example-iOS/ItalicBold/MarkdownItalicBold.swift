@@ -46,7 +46,8 @@ open class  MarkdownItalicBold: MarkdownCommonElement {
         // deleting leading markdown
         attributedString.deleteCharacters(in: match.range(at: 2))
         attributedString.deleteCharacters(in: match.range(at: 1))
-        print("whats left after changes (italic bold): \(attributedString.attributedSubstring(from: match.range(at: 1)).string)")
+        
+//        print("whats left after changes (italic bold): \(attributedString.attributedSubstring(from: match.range(at: 1)).string)")
     }
 }
 
