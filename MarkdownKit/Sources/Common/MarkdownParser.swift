@@ -74,9 +74,10 @@ open class MarkdownParser {
 
   public let font: MarkdownFont
   public let color: MarkdownColor
+    public let backgroundColor: MarkdownColor
   
   // MARK: Legacy Initializer
-  @available(*, deprecated, renamed: "init", message: "This constructor will be removed soon, please use the new opions constructor")
+  @available(*, deprecated, renamed: "init", message: "This constructor will be removed soon, please use the new options constructor")
   public convenience init(automaticLinkDetectionEnabled: Bool,
                           font: MarkdownFont = MarkdownParser.defaultFont,
                           customElements: [MarkdownElement] = []) {
@@ -87,16 +88,18 @@ open class MarkdownParser {
   // MARK: Initializer
   public init(font: MarkdownFont = MarkdownParser.defaultFont,
               color: MarkdownColor = MarkdownParser.defaultColor,
+              backgroundColor: MarkdownColor = MarkdownParser.defaultBackgroundColor,
               enabledElements: EnabledElements = .all,
               customElements: [MarkdownElement] = []) {
     self.font = font
     self.color = color
+    self.backgroundColor = backgroundColor
     
     header = MarkdownHeader(font: font)
     list = MarkdownList(font: font)
     quote = MarkdownQuote(font: font)
-    link = MarkdownLink(font: font)
-    automaticLink = MarkdownAutomaticLink(font: font)
+    link = MarkdownLink(font: font, backgroundColor: backgroundColor)
+    automaticLink = MarkdownAutomaticLink(font: font, backgroundColor: backgroundColor)
     bold = MarkdownBold(font: font)
     italic = MarkdownItalic(font: font)
     code = MarkdownCode(font: font)

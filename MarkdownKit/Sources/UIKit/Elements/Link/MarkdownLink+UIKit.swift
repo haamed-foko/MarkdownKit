@@ -10,4 +10,5 @@ import UIKit
 
 public extension MarkdownLink {
   static let defaultColor = UIColor.blue
+    static let defaultBackgroundColor = UIColor.yellow
 }

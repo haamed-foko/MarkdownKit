@@ -16,6 +16,7 @@ open class MarkdownLink: MarkdownLinkElement {
   
   open var font: MarkdownFont?
   open var color: MarkdownColor?
+    open var backgroundColor: MarkdownColor?
   
   open var regex: String {
     return MarkdownLink.regex
@@ -25,9 +26,10 @@ open class MarkdownLink: MarkdownLinkElement {
     return try NSRegularExpression(pattern: regex, options: .dotMatchesLineSeparators)
   }
   
-  public init(font: MarkdownFont? = nil, color: MarkdownColor? = MarkdownLink.defaultColor) {
+    public init(font: MarkdownFont? = nil, color: MarkdownColor? = MarkdownLink.defaultColor, backgroundColor: MarkdownColor = MarkdownLink.defaultBackgroundColor) {
     self.font = font
     self.color = color
+    self.backgroundColor = backgroundColor
   }
   
   
@@ -75,6 +77,14 @@ open class MarkdownLink: MarkdownLinkElement {
     
     formatText(attributedString, range: formatRange, link: linkURLString)
     addAttributes(attributedString, range: formatRange, link: linkURLString)
+    
+    /* Add highlighting to text if it starts with an asterisk */
+    let prefix = attributedString.attributedSubstring(from: formatRange).string
+    if prefix.first == "*" {
+        attributedString.addAttribute(.backgroundColor, value: backgroundColor ?? UIColor.yellow.withAlphaComponent(0.7), range: formatRange)
+            /* Remove the asterisk */
+        attributedString.deleteCharacters(in: NSRange(location: match.range.location, length: 1))
+    }
   }
   
   open func addAttributes(_ attributedString: NSMutableAttributedString, range: NSRange,
