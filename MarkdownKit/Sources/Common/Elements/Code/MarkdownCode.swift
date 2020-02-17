@@ -9,7 +9,7 @@ import Foundation
 
 open class MarkdownCode: MarkdownCommonElement {
 
-  fileprivate static let regex = "(.?|^)(\\`{1,3})(.+?)(\\2)"
+  fileprivate static let regex = "(.?|^)(\\`{3})([\\s\\S]+?)(\\2)"
   
   open var font: MarkdownFont?
   open var color: MarkdownColor?
@@ -30,6 +30,20 @@ open class MarkdownCode: MarkdownCommonElement {
     self.textBackgroundColor = textBackgroundColor
   }
 
+    public func match(_ match: NSTextCheckingResult, attributedString: NSMutableAttributedString) {
+        let nsString = attributedString.string as NSString
+        let codeBlock = nsString.substring(with: match.range)
+        print(codeBlock)
+        
+        // deleting trailing markdown
+        attributedString.deleteCharacters(in: match.range(at: 4))
+        // formatting string (may alter the length)
+        addAttributes(attributedString, range: match.range(at: 3))
+        // deleting leading markdown
+        attributedString.deleteCharacters(in: match.range(at: 2))
+        
+    }
+    
   open func addAttributes(_ attributedString: NSMutableAttributedString, range: NSRange) {
     let matchString: String = attributedString.attributedSubstring(from: range).string
     guard let unescapedString = matchString.unescapeUTF16() else { return }
