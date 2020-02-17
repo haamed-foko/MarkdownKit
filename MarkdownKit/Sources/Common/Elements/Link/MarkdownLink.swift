@@ -16,7 +16,7 @@ open class MarkdownLink: MarkdownLinkElement {
   
   open var font: MarkdownFont?
   open var color: MarkdownColor?
-    open var backgroundColor: MarkdownColor?
+    open var backgroundColor: MarkdownColor
   
   open var regex: String {
     return MarkdownLink.regex
@@ -81,7 +81,7 @@ open class MarkdownLink: MarkdownLinkElement {
     /* Add highlighting to text if it starts with an asterisk */
     let prefix = attributedString.attributedSubstring(from: formatRange).string
     if prefix.first == "*" {
-        attributedString.addAttribute(.backgroundColor, value: backgroundColor ?? UIColor.yellow.withAlphaComponent(0.7), range: formatRange)
+        attributedString.addAttribute(.backgroundColor, value: backgroundColor, range: formatRange)
             /* Remove the asterisk */
         attributedString.deleteCharacters(in: NSRange(location: match.range.location, length: 1))
     }
