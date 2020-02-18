@@ -31,22 +31,18 @@ open class MarkdownCode: MarkdownCommonElement {
   }
 
     public func match(_ match: NSTextCheckingResult, attributedString: NSMutableAttributedString) {
-        let nsString = attributedString.string as NSString
-        let codeBlock = nsString.substring(with: match.range)
-        print(codeBlock)
-        
         // deleting trailing markdown
         attributedString.deleteCharacters(in: match.range(at: 4))
         // formatting string (may alter the length)
         addAttributes(attributedString, range: match.range(at: 3))
         // deleting leading markdown
         attributedString.deleteCharacters(in: match.range(at: 2))
-        
     }
     
   open func addAttributes(_ attributedString: NSMutableAttributedString, range: NSRange) {
     let matchString: String = attributedString.attributedSubstring(from: range).string
-    guard let unescapedString = matchString.unescapeUTF16() else { return }
+    /* Transforms attributedString into readable text and trims new lines */
+    guard let unescapedString = matchString.unescapeUTF16()?.trimmingCharacters(in: .newlines) else { return }
     attributedString.replaceCharacters(in: range, with: unescapedString)
     
     var codeAttributes = attributes
