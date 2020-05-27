@@ -105,8 +105,8 @@ open class MarkdownParser {
     code = MarkdownCode(font: font)
     strikethrough = MarkdownStrikethrough(font: font)
 
-    self.escapingElements = [codeEscaping, escaping]
-    self.unescapingElements = [code, unescaping]
+    self.escapingElements = [escaping]
+    self.unescapingElements = [unescaping]
     self.customElements = customElements
     self.enabledElements = enabledElements
     updateDefaultElements()
