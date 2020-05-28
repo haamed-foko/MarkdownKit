@@ -5,48 +5,46 @@
   Created by Ivan Bruel on 19/07/16.
   Copyright © 2016 CocoaPods. All rights reserved.
 */
-"Markdown" = "```
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+"Markdown" = "#alexa_email **Alexa, you have 1 job change, 2 invitations and 1 message waiting for you on LinkedIn**
+by LinkedIn(notifications-noreply@linkedin.com)
+```
+Alexa, see what your network has been up to
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+See what's new >
+https://www.linkedin.com/comm/feed/?trk=eml-wym-cta&amp;midToken=AQFR3coKPcwVCw&amp;trkEmail=eml-what_you_missed_v2-null-18-null-null-8f8g1c%7Ej4gpfuqx%7Egx-null-neptune%2Ffeed&amp;lipi=urn%3Ali%3Apage%3Aemail_what_you_missed_v2%3Bmj6SC4e4StybXEsxEnH7Lg%3D%3D
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+=============================================================
+
+You have 13 notifications and updates from your network
+
+1 job change > https://www.linkedin.com/comm/feed/?trk=eml-wym-&amp;midToken=AQFR3coKPcwVCw&amp;trkEmail=eml-what_you_missed_v2-null-17-null-null-8f8g1c%7Ej4gpfuqx%7Egx-null-neptune%2Ffeed&amp;lipi=urn%3Ali%3Apage%3Aemail_what_you_missed_v2%3Bmj6SC4e4StybXEsxEnH7Lg%3D%3D
+
+2 invitations > https://www.linkedin.com/comm/mynetwork/?trk=eml-wym-&amp;midToken=AQFR3coKPcwVCw&amp;trkEmail=eml-what_you_missed_v2-null-9-null-null-8f8g1c%7Ej4gpfuqx%7Egx-null-neptune%2Fmynetwork&amp;lipi=urn%3Ali%3Apage%3Aemail_what_you_missed_v2%3Bmj6SC4e4StybXEsxEnH7Lg%3D%3D
+
+1 message > https://www.linkedin.com/comm/messaging/?trk=eml-wym-&amp;midToken=AQFR3coKPcwVCw&amp;trkEmail=eml-what_you_missed_v2-null-10-null-null-8f8g1c%7Ej4gpfuqx%7Egx-null-neptune%2Fmessaging&amp;lipi=urn%3Ali%3Apage%3Aemail_what_you_missed_v2%3Bmj6SC4e4StybXEsxEnH7Lg%3D%3D
+
+9 new updates > https://www.linkedin.com/comm/feed/?trk=eml-wym-&amp;midToken=AQFR3coKPcwVCw&amp;trkEmail=eml-what_you_missed_v2-null-13-null-null-8f8g1c%7Ej4gpfuqx%7Egx-null-neptune%2Ffeed&amp;lipi=urn%3Ali%3Apage%3Aemail_what_you_missed_v2%3Bmj6SC4e4StybXEsxEnH7Lg%3D%3D
+
+See all missed updates & notifications
+https://www.linkedin.com/comm/feed/?trk=eml-wym-cta2&amp;midToken=AQFR3coKPcwVCw&amp;trkEmail=eml-what_you_missed_v2-null-12-null-null-8f8g1c%7Ej4gpfuqx%7Egx-null-neptune%2Ffeed&amp;lipi=urn%3Ali%3Apage%3Aemail_what_you_missed_v2%3Bmj6SC4e4StybXEsxEnH7Lg%3D%3D
+
+
+
+
+© 2017 LinkedIn Ireland Unlimited Company. LinkedIn, the LinkedIn logo, and InMail are registered trademarks of LinkedIn Corporation in the United States and/or other countries. All rights reserved.
+
+You are receiving Activity You Missed emails. Unsubscribe here: https://www.linkedin.com/e/v2?e=8f8g1c-j4gpfuqx-gx&t=lun&midToken=AQFR3coKPcwVCw&tracking=eml-gro-wym-unsub&ek=what_you_missed_v2&loid=AQFzQghaC7MxyQAAAVzu5h91N7btBLE-oR5EGTIUqWcaJfFx9l9QpVqbOlLbzRZdhcKgF32-K5YlmFw&eid=8f8g1c-j4gpfuqx-gx
+
+
+
+This email was intended for Alexa Anderson (Customer Success Specialist at Foko - Photo Sharing for Retail Teams).
+Learn why we included this: https://www.linkedin.com/e/v2?e=8f8g1c-j4gpfuqx-gx&lipi=urn%3Ali%3Apage%3Aemail_what_you_missed_v2%3Bmj6SC4e4StybXEsxEnH7Lg%3D%3D&a=customerServiceUrl&midToken=AQFR3coKPcwVCw&ek=what_you_missed_v2&articleId=4788
+
+If you need assistance or have questions, please contact LinkedIn Customer Service: https://www.linkedin.com/e/v2?e=8f8g1c-j4gpfuqx-gx&lipi=urn%3Ali%3Apage%3Aemail_what_you_missed_v2%3Bmj6SC4e4StybXEsxEnH7Lg%3D%3D&a=customerServiceUrl&midToken=AQFR3coKPcwVCw&ek=what_you_missed_v2
+
+LinkedIn is a registered business name of LinkedIn Ireland Unlimited Company.
+Registered in Ireland as a private unlimited company, Company Number 477441
+Registered Office: Wilton Plaza, Wilton Place, Dublin 2, Ireland
 ```
 ";
 

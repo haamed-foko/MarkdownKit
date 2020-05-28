@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C4218BF248001CC00254758 /* MarkdownTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4218BB248000A300254758 /* MarkdownTesting.swift */; };
 		0C7D06AD23F318A400A5365F /* MarkdownItalicBold.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7D06A923F317E300A5365F /* MarkdownItalicBold.swift */; };
 		3EB0CC8F53265C3ED40DD111 /* Pods_Example_AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46A183F764483EFDC3A868ED /* Pods_Example_AppKit.framework */; };
 		3EB3627D23154D90005D48C8 /* MarkdownStrikethrough.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB3627C23154D90005D48C8 /* MarkdownStrikethrough.swift */; };
@@ -79,6 +80,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C4218BB248000A300254758 /* MarkdownTesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownTesting.swift; sourceTree = "<group>"; };
 		0C7D06A923F317E300A5365F /* MarkdownItalicBold.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownItalicBold.swift; sourceTree = "<group>"; };
 		2397DFE41C732E56E10D5CC2 /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
 		3EB3627C23154D90005D48C8 /* MarkdownStrikethrough.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownStrikethrough.swift; sourceTree = "<group>"; };
@@ -211,6 +213,7 @@
 				B64AF647220349900048439D /* Example-Appkit */,
 				B62C1BAF21EF7C8000308C8C /* Example-iOS */,
 				B62C1C0021EF7EED00308C8C /* MarkdownKit */,
+				0C4218BB248000A300254758 /* MarkdownTesting.swift */,
 				B64AF615220340300048439D /* MarkdownKit-mac */,
 				B62C1BAE21EF7C8000308C8C /* Products */,
 				DB7B6E69BE6DC6C1FEC0636D /* Pods */,
@@ -910,6 +913,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B64AF667220355120048439D /* MarkdownKitViewModel.swift in Sources */,
+				0C4218BF248001CC00254758 /* MarkdownTesting.swift in Sources */,
 				B64AF64B220349900048439D /* ViewController.swift in Sources */,
 				B64AF649220349900048439D /* AppDelegate.swift in Sources */,
 			);
