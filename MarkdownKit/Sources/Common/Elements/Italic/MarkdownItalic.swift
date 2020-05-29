@@ -32,21 +32,13 @@ open class MarkdownItalic: MarkdownCommonElement {
 //        print("range 4: \(attributedString.attributedSubstring(from: match.range(at: 4)).string)")
 //        print("range 5: \(attributedString.attributedSubstring(from: match.range(at: 5)).string)")
         
-        /* Get string */
-        let restOfString = attributedString.string
-        
-        /* Separate the string using the matched substring from italic regex */
-        let componentsOfRestOfString = restOfString.components(separatedBy: attributedString.attributedSubstring(from: match.range(at: 0)).string)
-        if !componentsOfRestOfString.isEmpty && componentsOfRestOfString.count >= 2 {
-            /* Get the string after the matched substring*/
-            let firstComponent = componentsOfRestOfString[1]
-            
-            let emailDomain = firstComponent.components(separatedBy: CharacterSet(charactersIn: " \n"))
-            /* Check if the first is an email*/
-            if emailDomain[0].contains("@") || attributedString.attributedSubstring(from: match.range(at: 0)).string.contains("@") {
-                /* If the line or first word IS an email, don't apply italic styling */
-                return
-            }
+        /* This checks if the matched attributedString from the regex is part of a link.
+         If so, don't apply the italic attribute to the attributedString.
+         Note: this only works if the italic tag is not at the beginning of the string.
+          */
+        let currentAttributes = attributedString.attributedSubstring(from: match.range).attributes(at: 0, effectiveRange: nil).map{$0.key.rawValue}
+        if currentAttributes.contains("NSLink") {
+            return
         }
         
         /* Remove Markdown tags and apply italic styling */
