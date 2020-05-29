@@ -22,12 +22,12 @@ open class MarkdownQuote: MarkdownLevelElement {
     return String(format: MarkdownQuote.regex, level)
   }
 
-  public init(font: MarkdownFont? = nil, maxLevel: Int = 0, indicator: String = ">",
+  public init(font: MarkdownFont? = nil, maxLevel: Int = 0, indicator: String = "❝",
               separator: String = "  ", color: MarkdownColor? = nil) {
     self.maxLevel = maxLevel
     self.indicator = indicator
     self.separator = separator
-    self.font = font
+    self.font = font?.withSize(18)
     self.color = color
   }
 

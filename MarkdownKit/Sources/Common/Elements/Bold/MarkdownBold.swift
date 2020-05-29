@@ -30,6 +30,15 @@ open class MarkdownBold: MarkdownCommonElement {
 //        print("range 3: \(attributedString.attributedSubstring(from: match.range(at: 3)).string)")
 //        print("range 4: \(attributedString.attributedSubstring(from: match.range(at: 4)).string)")
         
+        /* This checks if the matched attributedString from the regex is part of a link.
+         If so, don't apply the bold attribute to the attributedString.
+         Note: this only works if the bold tag is not at the beginning of the string.
+         */
+        let currentAttributes = attributedString.attributedSubstring(from: match.range).attributes(at: 0, effectiveRange: nil).map{$0.key.rawValue}
+        if currentAttributes.contains("NSLink") {
+            return
+        }
+        
         // deleting trailing markdown
         attributedString.deleteCharacters(in: match.range(at: 4))
         // formatting string (may alter the length)
